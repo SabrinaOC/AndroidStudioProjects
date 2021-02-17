@@ -14,7 +14,7 @@ public class invertir_array {
 		// imprimimos array para comprobar
 		/*Inicio mod 26/11/20 se ha eliminado la variable longitud porque no era necesaria y daba fallo al recorrer el array.
 		 * Reemplazamos <= por < */
-		for (int i = 0; i<array.length; i++)
+		for (int i = 0; i<=array.length; i++)
 		 System.out.print(array[i] + " ");
 		// invertimos array recorriéndolo hasta la mitad e intercambiando valores
 		for(int i=0;i<=array.length/2; i++){
