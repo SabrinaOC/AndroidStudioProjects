@@ -5,6 +5,8 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import java.awt.GridBagLayout;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.GridBagConstraints;
 import javax.swing.JPanel;
 import java.awt.Insets;
@@ -14,6 +16,8 @@ import java.awt.Color;
 import java.awt.FlowLayout;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.awt.event.ActionEvent;
 
 public class Calculadora {
@@ -52,7 +56,8 @@ public class Calculadora {
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//Controlamos el cierre de la ventana
+		frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		gridBagLayout.columnWidths = new int[]{0, 0, 0};
 		gridBagLayout.rowHeights = new int[]{0, 0, 0, 0, 0};
@@ -152,6 +157,20 @@ public class Calculadora {
 		panel_1.add(btnSumar);
 		
 		JButton btnSalir = new JButton("Salir");
+		btnSalir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				// Control del evento de cierre de ventana
+				String opciones[] = { "Aceptar", "Cancelar" };// Creamos opciones que aparecerán en ventana
+				int choice = JOptionPane.showOptionDialog(frame, "¿Quiere abandonar la aplicación?",
+						"Abandonar aplicación", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, opciones,
+						"Aceptar");
+				if (choice == JOptionPane.YES_OPTION) {
+					System.exit(0);
+
+				}
+			}
+		});
+
 		panel_1.add(btnSalir);
 	}
 	
@@ -159,6 +178,15 @@ public class Calculadora {
 		return Double.parseDouble(jtfn1.getText()) + Double.parseDouble(jtfn2.getText());
 	}
 	
+	//public void cerrarApp() {
+		public void windowClosing(WindowEvent e) {
+			String opciones[] = { "Aceptar", "Cancelar" };// Creamos opciones que aparecerán en ventana
+			int choice = JOptionPane.showOptionDialog(frame, "¿Quiere abandonar la aplicación?", "Abandonar aplicación",
+					JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, opciones, "Aceptar");
+			if (choice == JOptionPane.YES_OPTION) {
+				System.exit(0);
+			}
+	}
 	
 
 }
