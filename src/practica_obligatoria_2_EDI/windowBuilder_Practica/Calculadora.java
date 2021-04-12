@@ -1,4 +1,4 @@
-package windowBuilder_Practica;
+package practica_obligatoria_2_EDI.windowBuilder_Practica;
 
 import java.awt.EventQueue;
 
