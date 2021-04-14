@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="475" height="300" src="./practica_obligatoria_2_EDI/imgUnidad2.jpg"/>
+  <img width="475" height="300" src="./imgUnidad2.jpg"/>
 </p>
 
 ## EJERCICIO 1
