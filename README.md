@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="475" height="300" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Felpythonista.com%2Fide-para-python&psig=AOvVaw3F1Hdto_4eYRT8HjUj2rLO&ust=1618489869557000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIibkuDe_e8CFQAAAAAdAAAAABAD"/>
+  <img width="475" height="300" src="./src/entornos.png"/>
 </p>
 
 ## JUNIT
