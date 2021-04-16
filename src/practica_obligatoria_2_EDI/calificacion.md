@@ -11,3 +11,8 @@
 > **1,75** Casi perfecto. Te faltarian las imagenes de los ejercicios, por ejemplo, una caputura de pantalla de la ventana de la calculadora.
 
 Calificación: **9,75** puntos.
+
+<p align="center">
+  <img width="460" height="300" src="https://github.com/SabrinaOC/SabrinaEjerciciosEntornosDesarrollo/blob/master/src/practica_obligatoria_2_EDI/nota.jpeg">
+</p>
+ 
