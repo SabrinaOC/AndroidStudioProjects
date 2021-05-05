@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="475" height="300" src="./images/androidStudioLogo.jpg"/>
+  <img width="600" height="244" src="./images/androidStudioLogo.jpg"/>
 </p>
 
 ## CALCULADORA
