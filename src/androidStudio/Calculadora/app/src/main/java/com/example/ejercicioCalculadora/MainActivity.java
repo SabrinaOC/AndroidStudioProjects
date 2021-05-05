@@ -95,6 +95,9 @@ public class MainActivity extends AppCompatActivity {
                 //borramos el texto que aparece en pantalla
                 texto = "";
                 ponerNumEnPantalla(texto);
+
+                //y ponemos el num1 a null para seguir haciendo operaciones
+                numTrabajo1 = null;
             }
         });
     }
@@ -117,11 +120,10 @@ public class MainActivity extends AppCompatActivity {
 
                 } else {
                     //conservamos el número de trabajo y ponemos pantalla a 0
+
                     texto = "";
                     ponerNumEnPantalla(texto);
-                    //recogemos segundo número
 
-                    numTrabajo2 = Double.parseDouble(texto);
 
                 }
 
@@ -138,11 +140,17 @@ public class MainActivity extends AppCompatActivity {
         multBoton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //div el texto que aparece en pantalla
-                numTrabajo1 = Double.parseDouble(texto);
-                texto = "";
+                if (numTrabajo1 == 1) {
+                    //div el texto que aparece en pantalla
+                    numTrabajo1 = Double.parseDouble(texto);
+                    texto = "";
+                    ponerNumEnPantalla(texto);
+                } else {
+                    //conservamos el número de trabajo y ponemos pantalla a 0
+                    texto = "";
+                    ponerNumEnPantalla(texto);
+                }
 
-                ponerNumEnPantalla(texto);
                 //para el switch
                 identificadorOperacion = 2;
             }
@@ -156,11 +164,19 @@ public class MainActivity extends AppCompatActivity {
         masBoton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //div el texto que aparece en pantalla
-                numTrabajo1 = Double.parseDouble(texto);
-                texto = "";
+                if (numTrabajo1 == null) {
+                    //div el texto que aparece en pantalla
+                    numTrabajo1 = Double.parseDouble(texto);
+                    texto = "";
 
-                ponerNumEnPantalla(texto);
+                    ponerNumEnPantalla(texto);
+                } else {
+                    //conservamos el número de trabajo y ponemos pantalla a 0
+
+                    texto = "";
+                    ponerNumEnPantalla(texto);
+                }
+
                 //para el switch
                 identificadorOperacion = 3;
             }
@@ -174,11 +190,17 @@ public class MainActivity extends AppCompatActivity {
         menosBoton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //div el texto que aparece en pantalla
-                numTrabajo1 = Double.parseDouble(texto);
-                texto = "";
+                if (numTrabajo1 == null) {
+                    //div el texto que aparece en pantalla
+                    numTrabajo1 = Double.parseDouble(texto);
+                    texto = "";
 
-                ponerNumEnPantalla(texto);
+                    ponerNumEnPantalla(texto);
+                } else {
+                    //conservamos el número de trabajo y ponemos pantalla a 0
+                    texto = "";
+                    ponerNumEnPantalla(texto);
+                }
                 //para el switch
                 identificadorOperacion = 4;
             }
@@ -189,21 +211,15 @@ public class MainActivity extends AppCompatActivity {
     public void pulsarIgual (View v) {
         numTrabajo2 = Double.parseDouble(texto);
         //ponemos pantalla a cero
-        texto = "";
+        //texto = "";
 
-       // igualBoton.setOnClickListener(new View.OnClickListener() {
-
-           // @Override
-            //public void onClick(View v) {
                 //dependiendo de la operación que vamos a realizar usaremos un case u otro
                 switch (identificadorOperacion) {
                     case 1: //division
-                        resultadoFinal = numTrabajo1/numTrabajo2;
+                        //realizamos operación
+                        resultadoFinal = numTrabajo1 / numTrabajo2;
+
                         ponerNumEnPantalla("" + resultadoFinal);
-
-                        //para poder seguir haciendo cuentas, guardamos el resultado final
-                        numTrabajo1 = resultadoFinal;
-
                         break;
                     case 2: //multiplicacción
                         resultadoFinal = numTrabajo1 * numTrabajo2;
@@ -220,8 +236,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
-           // }
-        //});
+
+        //para poder seguir haciendo cuentas, guardamos el resultado final y ponemos a null el num2
+        numTrabajo1 = resultadoFinal;
+        numTrabajo2 = null;
+
+
     }
 
     /**
