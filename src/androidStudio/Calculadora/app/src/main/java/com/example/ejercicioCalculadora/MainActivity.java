@@ -1,4 +1,4 @@
-package com.example.prueba2;
+package com.example.ejercicioCalculadora;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,11 +14,12 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-   public static final String EXTRA_MESSAGE = "com.example.mainactivity.MESSAGE";
+  // lista para recoger botones números
     List<Button> listaBut = new ArrayList<Button>();
+    //variables necesarias para operaciones
     String texto = "";
     Button borrarBoton;
-    Button masBotonfind;
+    Button masBoton;
     Button menosBoton;
     Button multBoton;
     Button divBoton;
@@ -39,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Método para poner botones
+     */
     public void buttons () {
         //creamos botones y los añadimos a nuestra lista
         listaBut.add(findViewById(R.id.btn0));
@@ -53,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         listaBut.add(findViewById(R.id.btn9));
 
         borrarBoton = findViewById(R.id.btnBorrar);
-        masBotonfind = findViewById(R.id.btnMas);
+        masBoton = findViewById(R.id.btnMas);
         menosBoton = findViewById(R.id.btnMenos);
         multBoton = findViewById(R.id.btnMult);
         divBoton = findViewById(R.id.btnDiv);
@@ -61,15 +65,19 @@ public class MainActivity extends AppCompatActivity {
 
         pulsarBoton();
         pulsarBotonesEspeciales();
+
     }
 
+    /**
+     * Método para poner números en pantalla al tocar botones
+     */
     public void pulsarBoton () {
         for (Button  b : listaBut) {
             b.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     //cogemos el texto del botón y lo guardamos en un string
-                    texto = texto + b.getText();
+                    texto = texto + b.getText().toString();
                     ponerNumEnPantalla(texto);
 
                 }
@@ -78,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     *
+     * Método para borrar pantalla
      */
     public void pulsarBorrar () {
         borrarBoton.setOnClickListener(new View.OnClickListener() {
@@ -91,8 +99,43 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
+    /**
+     * Método para dividir (1ª parte)
+     */
     public void pulsarDiv () {
         divBoton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (numTrabajo1 == null) {
+                    //guardamos el texto que aparece en pantalla y limpiamos pantalla
+                    numTrabajo1 = Double.parseDouble(texto);
+
+                    texto = "";
+                    ponerNumEnPantalla(texto);
+
+
+                } else {
+                    //conservamos el número de trabajo y ponemos pantalla a 0
+                    texto = "";
+                    ponerNumEnPantalla(texto);
+                    //recogemos segundo número
+
+                    numTrabajo2 = Double.parseDouble(texto);
+
+                }
+
+                //para el switch
+                identificadorOperacion = 1;
+            }
+        });
+    }
+
+    /**
+     *
+     */
+    public void pulsarMult () {
+        multBoton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //div el texto que aparece en pantalla
@@ -101,54 +144,105 @@ public class MainActivity extends AppCompatActivity {
 
                 ponerNumEnPantalla(texto);
                 //para el switch
-                identificadorOperacion = 1;
+                identificadorOperacion = 2;
             }
         });
     }
 
-    public void pulsarIgual () {
+    /**
+     *
+     */
+    public void pulsarSuma () {
+        masBoton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //div el texto que aparece en pantalla
+                numTrabajo1 = Double.parseDouble(texto);
+                texto = "";
+
+                ponerNumEnPantalla(texto);
+                //para el switch
+                identificadorOperacion = 3;
+            }
+        });
+    }
+
+    /**
+     *
+     */
+    public void pulsarResta () {
+        menosBoton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //div el texto que aparece en pantalla
+                numTrabajo1 = Double.parseDouble(texto);
+                texto = "";
+
+                ponerNumEnPantalla(texto);
+                //para el switch
+                identificadorOperacion = 4;
+            }
+        });
+    }
+
+
+    public void pulsarIgual (View v) {
         numTrabajo2 = Double.parseDouble(texto);
         //ponemos pantalla a cero
         texto = "";
 
-        igualBoton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+       // igualBoton.setOnClickListener(new View.OnClickListener() {
+
+           // @Override
+            //public void onClick(View v) {
                 //dependiendo de la operación que vamos a realizar usaremos un case u otro
                 switch (identificadorOperacion) {
                     case 1: //division
                         resultadoFinal = numTrabajo1/numTrabajo2;
                         ponerNumEnPantalla("" + resultadoFinal);
 
+                        //para poder seguir haciendo cuentas, guardamos el resultado final
+                        numTrabajo1 = resultadoFinal;
+
+                        break;
+                    case 2: //multiplicacción
+                        resultadoFinal = numTrabajo1 * numTrabajo2;
+                        ponerNumEnPantalla("" + resultadoFinal);
+
+                        break;
+                    case 3: //suma
+                        resultadoFinal = numTrabajo1 + numTrabajo2;
+                        ponerNumEnPantalla("" + resultadoFinal);
+                        break;
+                    case 4: //resta
+                        resultadoFinal = numTrabajo1 - numTrabajo2;
+                        ponerNumEnPantalla("" + resultadoFinal);
                         break;
 
                 }
-            }
-        });
+           // }
+        //});
     }
 
+    /**
+     *
+     */
     public void pulsarBotonesEspeciales () {
         pulsarBorrar();
         pulsarDiv();
-        //pulsarIgual();
-
+        pulsarMult();
+        pulsarSuma();
+        pulsarResta();
     }
 
+    /**
+     *
+     * @param str
+     */
     public void ponerNumEnPantalla(String str) {
 
         ((EditText) findViewById(R.id.resultado)).setText(str);
     }
 
-    public void enviarMensaje(View view) {
 
-        //Intent conecta actividades, en este caso la actual (this) con mainactivity3
-        Intent intent= new Intent(this, MainActivity3.class);
-        //Para trabajar con un objeto que tenemos dentro de la vista usaremos findViewById
-        EditText editText = (EditText) findViewById(R.id.resultado);
-        String message= editText.getText().toString();
-        //almacenamos información de la caja de texto en el objeto intent para poder usarlo luego
-        intent.putExtra(EXTRA_MESSAGE, message);
-        //lanzamos un activity y le mandamos lo que tenemos en intent
-        startActivity(intent);
-    }
 }
