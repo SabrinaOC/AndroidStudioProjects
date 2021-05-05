@@ -19,4 +19,4 @@
 - - -
 
 ## ANDROID STUDIO
-* Proyectos en java para Android con la plataforma de desarrollo [Android Studio](https://github.com/SabrinaOC/SabrinaEjerciciosEntornosDesarrollo/tree/master/src/androidStudio/Calculadora).
+* Proyectos en java para Android con la plataforma de desarrollo [Android Studio](https://github.com/SabrinaOC/SabrinaEjerciciosEntornosDesarrollo/tree/master/src/androidStudio).
