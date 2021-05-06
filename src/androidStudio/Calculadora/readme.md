@@ -10,7 +10,7 @@ Aplicación de simulación de calculadora con operaciones sencillas (suma, resta
 Compatible con Android 5.0 Lollipop (API 21) y sucesores.
 
 <p align="center">
-  <img width="200" height="200" src="../images/calculatorIcon.png"/>
+  <img width="120" height="120" src="../images/calculatorIcon.png"/>
 </p>
 
 - - -
@@ -49,7 +49,6 @@ Compatible con Android 5.0 Lollipop (API 21) y sucesores.
 - - -
 
 ## DESCARGA ⬇️ ## 
-<br></br>
 Descarga y prueba la aplicación [aquí](https://github.com/SabrinaOC/SabrinaEjerciciosEntornosDesarrollo/blob/master/src/androidStudio/Apk/calcSabri.apk).
 <p>
   <img width="70" height="70" src="../images/enjoy.png"/>
