@@ -1,15 +1,10 @@
-<style>
-  #separacion {
-  justify-content: space-between;
-  }
-
-</style>
 
 <p align="center">
   <img width="900" height="230" src="../images/calculadora.png"/>
 </p>
 
-## DESCRIPCIÓN
+## DESCRIPCIÓN ![image](https://user-images.githubusercontent.com/72868271/117258427-43508f80-ae4d-11eb-851b-5ed262700b16.png)
+
 Aplicación de simulación de calculadora con operaciones sencillas (suma, resta, multiplicación y división) desarrollada en Java desde la plataforma Android Studio.
 Compatible con Android 5.0 Lollipop (API 21) y sucesores.
 
@@ -24,9 +19,9 @@ Compatible con Android 5.0 Lollipop (API 21) y sucesores.
 
 * Captura diseño aplicación.
 
-<p id="separacion">
+<p >
   <img width="200" height="433" src="../images/CapturaCalSabri.jpg"/>
-  
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
   <img width="200" height="433" src="../images/capturaIcono.jpg"/>
 </p>
 
