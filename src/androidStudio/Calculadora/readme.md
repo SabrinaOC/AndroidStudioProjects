@@ -22,7 +22,7 @@ Compatible con Android 5.0 Lollipop (API 21) y sucesores.
 
 <p align="center">
   <img width="200" height="433" src="../images/CapturaCalSabri.jpg"/>
-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
   <img width="200" height="433" src="../images/capturaIcono.jpg"/>
 </p>
 
