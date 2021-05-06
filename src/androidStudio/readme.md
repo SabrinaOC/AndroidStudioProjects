@@ -3,7 +3,7 @@
 </p>
 
 ## CALCULADORA
-* Proyecto en Java  usando el IDE Andoid estudio con el objeto de desarrollar una [Calculadora](https://github.com/SabrinaOC/SabrinaEjerciciosEntornosDesarrollo/tree/master/src/androidStudio/Calculadora) completamente funcional.
+* Proyecto en Java  usando el IDE Andoid Studio con el objeto de desarrollar una [Calculadora](https://github.com/SabrinaOC/SabrinaEjerciciosEntornosDesarrollo/tree/master/src/androidStudio/Calculadora) completamente funcional.
 
 - - -
 
