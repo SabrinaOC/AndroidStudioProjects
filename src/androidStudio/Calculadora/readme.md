@@ -1,3 +1,10 @@
+<style>
+  #separacion {
+  justify-content: space-between;
+  }
+
+</style>
+
 <p align="center">
   <img width="900" height="230" src="../images/calculadora.png"/>
 </p>
@@ -10,14 +17,14 @@ Compatible con Android 5.0 Lollipop (API 21) y sucesores.
 
 ## FUNCIONAMIENTO
 * Muestra de funcionamiento de la app.
-<p align="center">
+<p>
   <img width="200" height="433" src="../images/CalculadoraSabri.gif"/>
 </p>
 
 
 * Captura diseño aplicación.
 
-<p justify-content="space-between">
+<p id="separacion">
   <img width="200" height="433" src="../images/CapturaCalSabri.jpg"/>
   
   <img width="200" height="433" src="../images/capturaIcono.jpg"/>
