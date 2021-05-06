@@ -17,20 +17,18 @@ Compatible con Android 5.0 Lollipop (API 21) y sucesores.
 
 ## FUNCIONAMIENTO 📌 🧮 ## 
 
-<br></br>
 
-### DISEÑO APP EN IDE ### 
+#### DISEÑO APP EN IDE #### 
+<br></br>
 <p align="center">
   <img width="800" height="389" src="../images/designAS.PNG"/>
 </p>
-<br></br>
-<br></br>
 <br></br>
 
 - - -
 
 
-### VISTA APP EN DISPOSITIVO ANDROID ### 
+#### VISTA APP EN DISPOSITIVO ANDROID ####
 <br></br>
 <p align="center">
   <img width="200" height="433" src="../images/CapturaCalSabri.jpg"/>
@@ -38,18 +36,14 @@ Compatible con Android 5.0 Lollipop (API 21) y sucesores.
   <img width="200" height="433" src="../images/capturaIcono.jpg"/>
 </p>
 <br></br>
-<br></br>
-<br></br>
 
 - - -
 
-### EJECUCIÓN APP ### 
+#### EJECUCIÓN APP #### 
 <br></br>
 <p align="center">
   <img width="200" height="433" src="../images/CalculadoraSabri.gif"/>
 </p>
-<br></br>
-<br></br>
 <br></br>
 
 - - -
@@ -57,7 +51,7 @@ Compatible con Android 5.0 Lollipop (API 21) y sucesores.
 ## DESCARGA ⬇️ ## 
 <br></br>
 Descarga y prueba la aplicación [aquí](https://github.com/SabrinaOC/SabrinaEjerciciosEntornosDesarrollo/blob/master/src/androidStudio/Apk/calcSabri.apk).
-<p align="center">
+<p>
   <img width="70" height="70" src="../images/enjoy.png"/>
 </p>
 <br></br>
@@ -65,4 +59,4 @@ Descarga y prueba la aplicación [aquí](https://github.com/SabrinaOC/SabrinaEje
 - - -
 
 > <p align="center">When I first got into technology I didn't really understand what open source was. Once I started writing software, I realized how important this would be.
-> — Matt Mullenweg</p>
+> <br>— Matt Mullenweg</br></p>
