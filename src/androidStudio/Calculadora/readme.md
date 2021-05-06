@@ -17,11 +17,17 @@ Compatible con Android 5.0 Lollipop (API 21) y sucesores.
 
 ## FUNCIONAMIENTO 📌 🧮 ## 
 
+<br></br>
+
 ### DISEÑO APP EN IDE ### 
 <p align="center">
   <img width="800" height="389" src="../images/designAS.PNG"/>
 </p>
+<br></br>
+<br></br>
+<br></br>
 
+- - -
 
 
 ### VISTA APP EN DISPOSITIVO ANDROID ### 
@@ -31,14 +37,22 @@ Compatible con Android 5.0 Lollipop (API 21) y sucesores.
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
   <img width="200" height="433" src="../images/capturaIcono.jpg"/>
 </p>
+<br></br>
+<br></br>
+<br></br>
 
+- - -
 
 ### EJECUCIÓN APP ### 
 <br></br>
 <p align="center">
   <img width="200" height="433" src="../images/CalculadoraSabri.gif"/>
 </p>
+<br></br>
+<br></br>
+<br></br>
 
+- - -
 
 ## DESCARGA ⬇️ ## 
 <br></br>
@@ -46,6 +60,7 @@ Descarga y prueba la aplicación [aquí](https://github.com/SabrinaOC/SabrinaEje
 <p align="center">
   <img width="70" height="70" src="../images/enjoy.png"/>
 </p>
+<br></br>
 
 - - -
 
