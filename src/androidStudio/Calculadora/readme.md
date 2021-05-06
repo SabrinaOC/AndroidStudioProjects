@@ -19,10 +19,13 @@ Compatible con Android 5.0 Lollipop (API 21) y sucesores.
 
 <p align="center">
   <img width="200" height="433" src="../images/CapturaCalSabri.jpg"/>
+  
+  
+  
   <img width="200" height="433" src="../images/capturaIcono.jpg"/>
 </p>
 
 ## DESCARGA
-* Descarga y prueba la aplicación [aquí]https://github.com/SabrinaOC/SabrinaEjerciciosEntornosDesarrollo/blob/master/src/androidStudio/Apk/calcSabri.apk).
+* Descarga y prueba la aplicación [aquí](https://github.com/SabrinaOC/SabrinaEjerciciosEntornosDesarrollo/blob/master/src/androidStudio/Apk/calcSabri.apk).
 
 - - -
