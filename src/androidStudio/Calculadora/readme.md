@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img width="900" height="230" src="../images/calculadora.png"/>
+  <img width="900" height="250" src="../images/calculadora.png"/>
 </p>
 
 ## DESCRIPCIÓN 🖊️
@@ -9,16 +9,21 @@
 Aplicación de simulación de calculadora con operaciones sencillas (suma, resta, multiplicación y división) desarrollada en Java desde la plataforma Android Studio.
 Compatible con Android 5.0 Lollipop (API 21) y sucesores.
 
+<p align="center">
+  <img width="200" height="200" src="../images/calculatorIcon.png"/>
+</p>
+
 - - -
 
 ## FUNCIONAMIENTO 📌 🧮
-* Muestra de funcionamiento de la app.
+
+#### DISEÑO APP EN IDE
 <p align="center">
-  <img width="200" height="433" src="../images/CalculadoraSabri.gif"/>
+  <img width="200" height="433" src="../images/designAS.PNG"/>
 </p>
 
-
-* Captura diseño aplicación.
+<p></p>
+#### VISTA APP EN DISPOSITIVO ANDROID
 
 <p align="center">
   <img width="200" height="433" src="../images/CapturaCalSabri.jpg"/>
@@ -26,7 +31,22 @@ Compatible con Android 5.0 Lollipop (API 21) y sucesores.
   <img width="200" height="433" src="../images/capturaIcono.jpg"/>
 </p>
 
-## DESCARGA
-* Descarga y prueba la aplicación [aquí](https://github.com/SabrinaOC/SabrinaEjerciciosEntornosDesarrollo/blob/master/src/androidStudio/Apk/calcSabri.apk).
+<p></p>
+#### EJECUCIÓN APP
+<p align="center">
+  <img width="200" height="433" src="../images/CalculadoraSabri.gif"/>
+</p>
+
+<p></p>
+## DESCARGA ⬇️
+Descarga y prueba la aplicación [aquí](https://github.com/SabrinaOC/SabrinaEjerciciosEntornosDesarrollo/blob/master/src/androidStudio/Apk/calcSabri.apk).
+<p align="center">
+  <img width="100" height="100" src="../images/enjoy.png"/>
+</p>
+
+
 
 - - -
+
+> <p align="center">When I first got into technology I didn't really understand what open source was. Once I started writing software, I realized how important this would be.
+> — Matt Mullenweg</p>
