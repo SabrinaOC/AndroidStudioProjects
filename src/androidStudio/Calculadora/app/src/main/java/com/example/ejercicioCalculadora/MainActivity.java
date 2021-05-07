@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                 ponerNumEnPantalla(texto);
 
                 //y ponemos el num1 a null para seguir haciendo operaciones
-                numTrabajo1 = null;
+                numTrabajo1 = 0.0;
             }
         });
     }
@@ -140,8 +140,8 @@ public class MainActivity extends AppCompatActivity {
         multBoton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (numTrabajo1 == 1) {
-                    //div el texto que aparece en pantalla
+                if (numTrabajo1 == null) {
+                    //mult el texto que aparece en pantalla
                     numTrabajo1 = Double.parseDouble(texto);
                     texto = "";
                     ponerNumEnPantalla(texto);
