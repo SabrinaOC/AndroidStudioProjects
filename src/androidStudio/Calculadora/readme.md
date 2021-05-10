@@ -22,7 +22,8 @@ Compatible con Android 5.0 Lollipop (API 21) y sucesores.
 <br></br>
 <p align="center">
   <img width="800" height="389" src="../images/designAS.PNG"/>
-  <p>[Ver Código](https://github.com/SabrinaOC/SabrinaEjerciciosEntornosDesarrollo/blob/master/src/androidStudio/Calculadora/app/src/main/java/com/example/ejercicioCalculadora/MainActivity.java)</p>
+  
+  [Ver código](https://github.com/SabrinaOC/SabrinaEjerciciosEntornosDesarrollo/blob/master/src/androidStudio/Calculadora/app/src/main/java/com/example/ejercicioCalculadora/MainActivity.java).
 </p>
 <br></br>
 
