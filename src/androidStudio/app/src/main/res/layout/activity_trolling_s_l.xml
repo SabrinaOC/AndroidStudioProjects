@@ -5,8 +5,7 @@
     android:id="@+id/back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D6E6C4"
-    android:backgroundTint="#D0EAB2"
+    android:background="#B9B9EA80"
     tools:context=".TrollingSL">
 
     <androidx.constraintlayout.widget.Guideline
@@ -31,6 +30,9 @@
         android:onClick="abrirWeb"
         android:text="Navegador"
         android:textSize="18sp"
+        app:icon="@android:drawable/ic_menu_search"
+        app:iconGravity="textStart"
+        app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -51,12 +53,17 @@
 
     <Button
         android:id="@+id/button2"
+        style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="203dp"
         android:layout_height="60dp"
         android:backgroundTint="#80CD27"
         android:onClick="abrirMaps"
         android:text="Mapa"
         android:textSize="18sp"
+        app:icon="@android:drawable/ic_dialog_map"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:iconTintMode="src_in"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -69,6 +76,8 @@
         android:onClick="abrirTelefono"
         android:text="Teléfono"
         android:textSize="18sp"
+        app:icon="@android:drawable/stat_sys_phone_call"
+        app:iconGravity="textStart"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -81,6 +90,9 @@
         android:onClick="abrirFoto"
         android:text="Foto"
         android:textSize="18sp"
+        app:icon="@android:drawable/ic_menu_camera"
+        app:iconGravity="textStart"
+        app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -100,6 +112,8 @@
         android:onClick="abrirCorreo"
         android:text="Email"
         android:textSize="18sp"
+        app:icon="@android:drawable/ic_dialog_email"
+        app:iconGravity="textStart"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
