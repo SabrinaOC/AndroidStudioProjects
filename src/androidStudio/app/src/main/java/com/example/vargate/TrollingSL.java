@@ -3,7 +3,9 @@ package com.example.vargate;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -12,6 +14,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class TrollingSL extends AppCompatActivity {
+
+    public static final String EXTRA_MESSAGE = "com.example.mainactivity.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,14 +49,61 @@ public class TrollingSL extends AppCompatActivity {
 
     public void abrirVentanaAbout() {
 
-        //Intent conecta actividades, en este caso la actual (this) con mainactivity3
+        //Intent conecta actividades, en este caso la actual (this) con aboutInfo
         Intent intent= new Intent(this, AboutInfo.class);
-        //Para trabajar con un objeto que tenemos dentro de la vista usaremos findViewById
-      /*  EditText editText = (EditText) findViewById(R.id.resultado);
-        String message= editText.getText().toString();
-        //almacenamos información de la caja de texto en el objeto intent para poder usarlo luego
-        intent.putExtra(EXTRA_MESSAGE, message); */
+
+        startActivity(intent);
+    }
+
+    public void abrirWeb(View view) {
+
+        //Intent conecta actividades, en este caso la actual (this) con webBuscada
+        Intent intent= new Intent(this, webBuscada.class);
+
         //lanzamos un activity y le mandamos lo que tenemos en intent
         startActivity(intent);
+    }
+
+    public void abrirMaps(View view) {
+
+        //Intent conecta actividades, en este caso la actual (this) con mainactivity3
+        Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("geo:37.41131, -4.47793"));
+
+        startActivity(intent);
+    }
+
+    public void abrirFoto(View view) {
+
+       final int REQUEST_IMAGE_CAPTURE = 1;
+        //Intent conecta actividades, en este caso la actual (this) con mainactivity3
+        Intent intent= new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(intent, REQUEST_IMAGE_CAPTURE);
+        }
+
+        startActivity(intent);
+    }
+
+    /**
+     *
+     * @param view
+     */
+    public void abrirCorreo(View view) {
+
+        Intent intent=Intent.makeMainSelectorActivity(Intent.ACTION_MAIN, Intent.CATEGORY_APP_EMAIL);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);//Min SDK 15
+        startActivity(intent);
+
+    }
+
+    /**
+     *
+     * @param view
+     */
+    public void abrirTelefono(View view) {
+
+        Intent intent= new Intent(Intent.ACTION_DIAL);
+        startActivity(intent);
+
     }
 }

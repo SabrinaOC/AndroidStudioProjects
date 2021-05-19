@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">VARGate</string>
+    <string name="app_name">Recursos</string>
     <string name="menu_name">Creator</string>
     <string name="menu_about">App Icon</string>
-    <string name="menu_item3">Configuración</string>
+    <string name="menu_item3">Settings</string>
 
 </resources>

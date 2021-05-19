@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.vargate">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyBj_cYwHAxgvcDzMNZeHmOL0msoa_Dj68U" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +16,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VARGate">
-        <activity android:name=".AboutInfo"></activity>
+        <activity android:name=".correo"></activity>
+        <activity android:name=".Maps" />
+        <activity android:name=".webBuscada" />
+        <activity android:name=".AboutInfo" />
         <activity android:name=".TrollingSL">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
