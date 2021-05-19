@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img width="900" height="250" src="../images/calculadora.png"/>
+  <img width="900" height="250" src="./img/cabeceraUtilities.jpg"/>
 </p>
 
 ## DESCRIPCIÓN 🖊️ ## 
@@ -23,7 +23,7 @@ Compatible con Android 5.0 Lollipop (API 21) y sucesores.
 <p align="center">
   <img width="800" height="389" src="./img/design.PNG"/>
   
-  [Ver código](https://github.com/SabrinaOC/SabrinaEjerciciosEntornosDesarrollo/blob/master/src/androidStudio/Calculadora/app/src/main/java/com/example/ejercicioCalculadora/MainActivity.java).
+  [Ver código](https://github.com/SabrinaOC/SabrinaEjerciciosEntornosDesarrollo/tree/master/src/androidStudio/app/src/main/java/com/example/vargate)
 </p>
 <br></br>
 
