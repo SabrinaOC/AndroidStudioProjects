@@ -7,3 +7,8 @@
 
 - - -
 
+## CALCULADORA
+* Proyecto en Java, como la calculadora, en el que se ha usado Andoid Studio para desarrollar una [applicación de utilidades](https://github.com/SabrinaOC/SabrinaEjerciciosEntornosDesarrollo/tree/master/src/androidStudio/recursos) completamente funcional.
+
+- - -
+
